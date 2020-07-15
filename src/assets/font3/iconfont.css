@@ -1,0 +1,41 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1588662616184'); /* IE9 */
+  src: url('iconfont.eot?t=1588662616184#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPwAAsAAAAACMwAAAOhAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDXgqEFIMvATYCJAMcCxAABCAFhG0HZhuNB1GUD0af7GeBu7chMth4Al23B8QD1RyfQd8HaBBdPPS/3//2nDNXvmsyx6qvbprxUGjiCVoj0pqX8P5+bhMv6V2fxyXMkvbJ+zN7cMd1WiYVCBFCowHMqQMe7O+9T0+OEDPF+DQIyRVCJdJ+uJ/p0mYDyWff5pIRWgUUPKCBZV1ECO9ABn4naDeMXdASzycwbJ2Jv+Z6OHOaZE4LxKv4NOS0jFo25IZeaCvWpviu0Zev5Q18C34+/sOZ9RRNZc69/mSZcJNf7F+r9c3gjcceCmc6I9gmKg5wkvhUaX6jRuEDomF1cLqNM65XtFMdNqKiWptvdTAgW2i2h3HrHzxaqSoaQbRg9ii4jyMtv9gOO5FEQITkVxFC5VcrQuHXPELDr1XuE56rA+MYw0f8YBLOCRdFPMRvVmImc2aSND1NapfidcrUBs0YrHy0UTo6Fm8cLpOKGmIHRrvFeMe6R0WWL8b6CGlvtFE2Fi/HGqSifFLLBiANMj5YOd4o7d2lE00qq2W4oxAo9IjycYsuxPqyoiGklJaWlLK49OdpkSE5ToX3dik7MxmjarHqCyR4f19Qz1Vb+PszVoGDDXl5I3m5x7uJCeOJcaixo895X01UxxO3jzmSnAzUR7wl8Ymq3rsMb+HEZuE5sjl3j7HSz9I5O2eRVTmho3qO5VX4Jm9RdCbuJRoResU1HF67COeZYE6O1Bgff3gwUlUB0/0mIq0On7m+qJMXy9V/vamrGzhwPdzbqY+t1THrAEoAAPx3pDYZAQCgpJOjIJCuZImuZCtiORm35pHRn38cSPCxg1CB9VfPoQIAwPmJoR9iT2fGzfMHJTpzfnVeYvA84DxT06VS3jmeQOcCGRQMG8YPtk/7TSefe1XR0JtLoOisQdXbQCdvK9HGiHMQWr2LMGzfevOIGQNR5BD2PAGESS8oxv2EatIHnfgvNOb9oTW5CsPuxsyeI7b2nH01A0PCBCLyIT6ybZitIyPMPWJ6q8IhzQtIVxzG3AcGuvr52BobHKZYkJmT+llZDGIy2hpcwcWwqlpIy2gLjMmOy6Iu0NOLqXojOzK15gxXDVCIoASIPIBcrNVgXndiFA5/hFI3ldDQUFKlv0KDUd4/8NjcDui1uOlUcisPGd2lfIQwgBm0amAFjKiywi3QVY8qoBixZQOCnYCDWrGuYnt5af2ee2CYeZouStTIaKKNLnpxOnT9HisrenwydtTgUZyfFhmHcSl7Ko4DAAAA') format('woff2'),
+  url('iconfont.woff?t=1588662616184') format('woff'),
+  url('iconfont.ttf?t=1588662616184') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1588662616184#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-1:before {
+  content: "\e6c8";
+}
+
+.icon-icon-test:before {
+  content: "\e69b";
+}
+
+.icon-icon-test1:before {
+  content: "\e67c";
+}
+
+.icon-icon-test2:before {
+  content: "\e662";
+}
+
+.icon-icon-check:before {
+  content: "\e6ba";
+}
+
+.icon-check:before {
+  content: "\e60a";
+}
+

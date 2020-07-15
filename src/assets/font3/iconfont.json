@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1096947",
+      "name": "√1",
+      "font_class": "1",
+      "unicode": "e6c8",
+      "unicode_decimal": 59080
+    },
+    {
+      "icon_id": "3704903",
+      "name": "√",
+      "font_class": "icon-test",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "4908493",
+      "name": "√1",
+      "font_class": "icon-test1",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "4963595",
+      "name": "√",
+      "font_class": "icon-test2",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "6710142",
+      "name": "√",
+      "font_class": "icon-check",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
+      "icon_id": "8194627",
+      "name": "√",
+      "font_class": "check",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    }
+  ]
+}

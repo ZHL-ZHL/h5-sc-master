@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,inital-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><title>my-app</title><link href=./static/css/app.2fa3a50e7c0b7fdffdbf971123242001.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.51c15ac3678e1cde389f.js></script><script type=text/javascript src=./static/js/vendor.507c6ba55b0786c67d90.js></script><script type=text/javascript src=./static/js/app.66841bb04ecc870456dd.js></script></body><script>// debugger
+    // console.log('aaa')
+    // debugger
+    // document.documentElement.requestFullscreen &&  document.documentElement.requestFullscreen();
+    // document.documentElement.webkitRequestFullscreen &&  document.documentElement.webkitRequestFullscreen();
+//     addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+//       function hideURLbar(){ 
+//                 window.scrollTo(0,1); 
+//       } 
+
+/*! Normalized address bar hiding for iOS & Android (c) @scottjehl MIT License */
+;(function( win ){
+var doc = win.document;
+// If there's a hash, or addEventListener is undefined, stop here
+if(!win.navigator.standalone && !location.hash && win.addEventListener ){
+
+//scroll to 1
+win.scrollTo( 0, 1 );
+var scrollTop = 1,
+getScrollTop = function(){
+return win.pageYOffset || doc.compatMode === "CSS1Compat" && doc.documentElement.scrollTop || doc.body.scrollTop || 0;
+},
+
+//reset to 0 on bodyready, if needed
+bodycheck = setInterval(function(){
+if( doc.body ){
+clearInterval( bodycheck );
+scrollTop = getScrollTop();
+win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+}
+}, 15 );
+
+win.addEventListener( "load", function(){
+setTimeout(function(){
+//at load, if user hasn't scrolled more than 20 or so...
+if( getScrollTop() < 20 ){
+//reset to hide addr bar at onload
+win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+}
+}, 0);
+}, false );
+}
+})( window );
+window.onload = function () {
+    // 阻止双击放大
+    var lastTouchEnd = 0;
+    document.addEventListener('touchstart', function (event) {
+      if (event.touches.length > 1) {
+        event.preventDefault();
+      }
+    });
+    document.addEventListener('touchend', function (event) {
+      var now = (new Date()).getTime();
+      if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+      }
+      lastTouchEnd = now;
+    }, false);
+
+    // 阻止双指放大
+    document.addEventListener('gesturestart', function (event) {
+      event.preventDefault();
+    });
+  };
+  var a=123;</script></html>

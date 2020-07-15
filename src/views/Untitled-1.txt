@@ -1,0 +1,83 @@
+<template>
+    <Row>
+        <Row type="flex" class="code-row-bg">
+            <Col span="6">12</Col>
+            <Col span="6">67</Col>
+            <Col span="6">32</Col>
+            <Col span="6">54</Col>
+        </Row>
+    </Row>
+</template>
+ 
+ 
+<script>
+    export default {
+        name: 'jssdk',
+        data () {
+            return {
+                oqqq: '',
+                time: 0,
+                ispay: 0
+            }
+        },
+        methods:{
+ 
+                callpay:function (oqqq){
+                    if (typeof WeixinJSBridge == "undefined") {
+                        if (document.addEventListener) {
+                            //监听没起作用
+                            document.addEventListener('WeixinJSBridgeReady', this.jsApiCall(oqqq), false)
+                        } else if (document.attachEvent) {
+                            document.attachEvent('WeixinJSBridgeReady', this.jsApiCall(oqqq))
+                            document.attachEvent('onWeixinJSBridgeReady', this.jsApiCall(oqqq))
+                        }
+                    } else {
+                        this.jsApiCall(oqqq)
+                    }
+                },
+ 
+                jsApiCall:function (osss){
+                    WeixinJSBridge.invoke(
+                        'getBrandWCPayRequest',
+                        osss,
+                        function (res) {
+                            // res.err_msg
+                            // get_brand_wcpay_request:ok 支付成功，其它统一标记失败
+                            // get_brand_wcpay_request:cancel 支付过程中用户取消
+                            // get_brand_wcpay_request:fail 支付失败
+                            // res.err_desc中文描述 eg.该订单已过期，请重新下单
+                            alert(res.err_code+res.err_desc+res.err_msg)
+                        }
+                    )
+                }
+ 
+        },
+        created: function () {
+ 
+            this.oqqq = {
+                "appId": "appId",
+                "nonceStr": "nonceStr",
+                "package": "package",
+                "signType": "signType",
+                "timeStamp": "timeStamp",
+                "paySign": "paySign"
+            }
+ 
+ 
+            //setTimeout(() => {
+            //    this.callpay(this.oqqq)
+            //}, 2000);
+ 
+            this.time = setInterval(() =>{
+                //超时处理
+                //WeixinJSBridge加载需要1-2秒  WeixinJSBridge is not defined
+                if (typeof WeixinJSBridge != "undefined" && this.ispay == 0) {
+                    this.ispay = 1
+                    this.jsApiCall(this.oqqq)
+                    clearInterval(this.time)
+                }
+            },500);
+ 
+        }
+    }
+</script>
